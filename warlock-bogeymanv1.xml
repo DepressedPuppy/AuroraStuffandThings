@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>The Bogeyman</name>
+    <description>The Bogeyman Otherworldly Patron from Darkshire's Patronomicon</description>
+    <author url="https://www.dmsguild.com/product/327927/Patronomicon-for-Warlocks">Darkshire's Patronomicon</author>
+    <update version="0.0.5">
+      <file name="warlock-bogeyman.xml" url="https://raw.githubusercontent.com/DepressedPuppy/AuroraStuffandThings/main/warlock-bogeyman.xml" />
+    </update>
+  </info>
+  <element name="The Bogeyman" type="Archetype" source="Darkshire's Patronomicon" id="ID_DKSE_DKPN_ARCHETYPE_BOGEYMAN">
+    <supports>Otherworldly Patron</supports>
+    <description>
+      <p>Your patron is always by your side. In all probability. They have a habit of moving around without being seen, which makes it very hard to convince anyone they exist. But you know they do.</p>
+      <p class="indent">Perhaps it came to you as a child. Or insinuated itself into your dreams during a troubled time. Either way, it grants you magic of deception and illusion, to walk right by your enemies without them ever knowing a thing about it.</p>
+      <div element="ID_DKSE_DKPN_ARCHETYPE_FEATURE_BOGEYMAN_EXPANDED_SPELL_LIST" />
+      <div element="ID_DKSE_DKPN_ARCHETYPE_FEATURE_BOGEYMAN_SILHOUETTE" />
+      <div element="ID_DKSE_DKPN_ARCHETYPE_FEATURE_BOGEYMAN_INEFFABLE_SQUEEZE" />
+      <div element="ID_DKSE_DKPN_ARCHETYPE_FEATURE_BOGEYMAN_HALF-EXISTENCE" />
+      <div element="ID_DKSE_DKPN_ARCHETYPE_FEATURE_BOGEYMAN_RIDEALONG" />
+    </description>
+    <sheet>
+      <description>Your patron is a powerful being that doesnt fully exist.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_DKSE_DKPN_ARCHETYPE_FEATURE_BOGEYMAN_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_DKSE_DKPN_ARCHETYPE_FEATURE_BOGEYMAN_SILHOUETTE" level="1"/>
+      <grant type="Archetype Feature" id="ID_DKSE_DKPN_ARCHETYPE_FEATURE_BOGEYMAN_INEFFABLE_SQUEEZE" level="6"/>
+      <grant type="Archetype Feature" id="ID_DKSE_DKPN_ARCHETYPE_FEATURE_BOGEYMAN_HALF-EXISTENCE" level="10"/>
+      <grant type="Archetype Feature" id="ID_DKSE_DKPN_ARCHETYPE_FEATURE_BOGEYMAN_RIDEALONG" level="14"/>
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="Darkshire's Patronomicon" id="ID_DKSE_DKPN_ARCHETYPE_FEATURE_BOGEYMAN_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <description>
+      <p>The Bogeyman lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>BOGEYMAN EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>sleep, hunter's mark</em></td></tr>
+        <tr><td>2nd</td><td><em>blur, pass without trace</em></td></tr>
+        <tr><td>3rd</td><td><em>blink, meld into stone</em></td></tr>
+        <tr><td>4th</td><td><em>greater invisiblity, phantasmal killer</em></td></tr>
+        <tr><td>5th</td><td><em>mislead, modify memory</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Bogeyman lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_SLEEP</extend>
+      <extend>ID_PHB_SPELL_HUNTERS_MARK</extend>
+      <extend>ID_PHB_SPELL_BLUR</extend>
+      <extend>ID_PHB_SPELL_PASS_WITHOUT_TRACE</extend>
+      <extend>ID_PHB_SPELL_BLINK</extend>
+      <extend>ID_PHB_SPELL_MELD_INTO_STONE</extend>
+      <extend>ID_PHB_SPELL_GREATER_INVISIBILITY</extend>
+      <extend>ID_PHB_SPELL_PHANTASMAL_KILLER</extend>
+      <extend>ID_PHB_SPELL_MISLEAD</extend>
+      <extend>ID_PHB_SPELL_MODIFY_MEMORY</extend>
+    </spellcasting>
+  </element>
+  <element name="Silhouette" type="Archetype Feature" source="Darkshire's Patronomicon" id="ID_DKSE_DKPN_ARCHETYPE_FEATURE_BOGEYMAN_SILHOUETTE">
+    <description>
+      <p>At 1st level, you can use your magic to bend light through you, obfuscating your appearance and helping you be overlooked. Onlookers can only see your fuzzy outline, and your appearance is concealed under a dull grey blur.</p>
+      <p class="indent">This ability lasts for 1 minute, or until you cast a spell or make an attack, after which it fades. Whilst Silhouette is active, you have advantage on Dexterity (Stealth) checks based on sight.</p>
+      <p class="indent">You must finish a short rest before using this ability again.</p>
+    </description>
+	<sheet>
+      <description>This ability lasts for 1 minute, or until you cast a spell or make an attack, after which it fades. Whilst Silhouette is active, you have advantage on Dexterity (Stealth) checks based on sight. You must finish a short or long rest before using this ability again.</description>
+    </sheet>
+  </element>
+  <element name="Ineffable Squeeze" type="Archetype Feature" source="Darkshire's Patronomicon" id="ID_DKSE_DKPN_ARCHETYPE_FEATURE_BOGEYMAN_INEFFABLE_SQUEEZE">
+    <description>
+      <p>Starting at 6th level, you can hide in places that defy logical explanation. You can fit into tight spaces and through gaps as if you were two creatures sizes smaller than you are. </p>
+    </description>
+	<sheet>
+      <description>You can fit into tight spaces and through gaps as if you were two creatures sizes smaller than you are.</description>
+    </sheet>
+  </element>
+  <element name="Half-Existence" type="Archetype Feature" source="Darkshire's Patronomicon" id="ID_DKSE_DKPN_ARCHETYPE_FEATURE_BOGEYMAN_HALF-EXISTENCE">
+    <description>
+      <p>Starting at 10th level, your identity begins to bleed away into nothingness. You no longer have a true name, and any contracts you have made with any being other than your patron are voided.</p>
+	  <p class="indent">Further, no spell or ability can detect you by using your name or appearance.</p>
+    </description>
+    <sheet>
+      <description>You no longer have a true name, and any contracts you have made with any being other than your patron are voided. Further, no spell or ability can detect you by using your name or appearance.</description>
+    </sheet>
+  </element>
+  <element name="Ridealong" type="Archetype Feature" source="Darkshire's Patronomicon" id="ID_DKSE_DKPN_ARCHETYPE_FEATURE_BOGEYMAN_RIDEALONG">
+    <description>
+      <p>Starting at 14th level, you can disappear from reality into the mind of a nearby creature. As an action, you target a creature you can see, and you vanish from the physical world, manifesting inside the mind of the target as a creature only they can see. </p>
+      <p class="indent">During this time you may talk to the affected creature and move around, but may not interact with the physical world in any way or cast spells. Only the creature you are inhabiting can sense you.</p>
+	  <p class="indent">Additionally, you must stay within 10 feet of the affected creature, and if you are separated for any reason you appear within 10 feet of them at the start of the next round.</p>
+	  <p class="indent">You can exit the mind of the creature as an action, returning within 5 feet of where you originally vanished. If the affected creature shifts planes, then this ability ends early, otherwise you can remain in the creature’s mind indefinitely.</p>
+	  <p class="indent">You must finish a long rest before using this ability again.</p>
+    </description>
+    <sheet>
+      <description>As an action you can vanish from the physical world and manifest inside the mind of a target creature of your choice. During this time you can only be seen and sensed by your target, you may talk to the target and move around, but cannot interact with the physical world in any way or cast spells. You must stay within 10 feet of the target or appear normally within 10 feet of them at the start of the next round. You can exit your target's mind as an action, returning within 5 feet of where you orginally vanished. If the target switches planes then this ability ends early, otherwise you can remain in the creature's head indefinitely. Lastly you must finish a short or long rest before using this ability again.</description>
+    </sheet>
+  </element>
+</elements>
