@@ -5,7 +5,7 @@
     <description>The Bogeyman Otherworldly Patron from Darkshire's Patronomicon</description>
     <author url="https://www.dmsguild.com/product/327927/Patronomicon-for-Warlocks">Darkshire's Patronomicon</author>
     <update version="0.0.5">
-      <file name="warlock-celestial.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/supplements/xanathars-guide-to-everything/archetypes/warlock-celestial.xml" />
+      <file name="warlock-bogeyman.xml" url="https://raw.githubusercontent.com/DepressedPuppy/AuroraStuffandThings/main/warlock-bogeyman.xml" />
     </update>
   </info>
   <element name="The Bogeyman" type="Archetype" source="Darkshire's Patronomicon" id="ID_DKSE_DKPN_ARCHETYPE_BOGEYMAN">
